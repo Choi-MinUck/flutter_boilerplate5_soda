@@ -31,20 +31,18 @@ class MyPages extends StatelessWidget {
     return PageView(
       controller: controller,
       children: <Widget>[
-        Center(
-          child: Column(
-            children: <Widget>[
-              const Padding(padding: EdgeInsets.only(top: 240)),
-              Image.asset(
-                'assets/images/sodaIcon.png',
-              ),
-              const Padding(padding: EdgeInsets.only(top: 20)),
-              Text(
-                'Copyright 2022 SODA.  All rights reserved.',
-                style: Subtitle2(),
-              )
-            ],
-          ),
+        Column(
+          children: <Widget>[
+            const Padding(padding: EdgeInsets.only(top: 240)),
+            Image.asset(
+              'assets/images/sodaIcon.png',
+            ),
+            const Padding(padding: EdgeInsets.only(top: 20)),
+            Text(
+              'Copyright 2022 SODA.  All rights reserved.',
+              style: Subtitle2(),
+            )
+          ],
         ),
         Center(
           child: Image.asset(
